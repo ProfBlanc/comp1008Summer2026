@@ -1,0 +1,47 @@
+One of the best planning techniques is to
+start with the final result and work backwards
+
+Car costs 10k
+You make 24k a year (2k a month)
+Your expenses are 500 per month (6k a year)
+Save up to 18k a year
+8k instead of 18k because I want a car
+
+
+
+In IT/programming
+
+You are given the requirements of the product
+-summary
+-situational
+    -when user does this, this should happen
+    -user must pass the following requirements
+
+A behaviour in an app maps to a method/function
+Ensure that the app behaves accordingly
+    test it
+        edge cases: starting/ending criteria
+            ex: if user decides to divide
+                a number by zero
+
+
+Definition
+    Unit Test:
+        testing the behavior of a method
+            why? make sure that method behaves correctly
+            components
+                input
+                expected output
+                actually/received output
+
+        Breaks down problem into subproblems
+        Gives the expected/final behavior
+
+enum: enumerable
+    a list of constants
+        dropdown list of options
+
+    2 parts
+        part 1: declare the list of possibilities
+        part 2: create an instance variable
+                that holds 1 of the list of possibilities
