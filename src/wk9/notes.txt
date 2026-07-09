@@ -1,0 +1,34 @@
+File Manipulation
+    work with files and folders
+        why? Answer: persistent data
+
+Components
+    CRUD
+        Create  Read    Update  Delete
+    files and folders
+Many classes used to file manipulation
+    java.io.NAME
+        io = input/output
+    java.nio
+        nio = new input/output package
+File System
+    FS
+    refers to Explorer, Finder, any other names
+    of the organization of files and folders on an OS
+    OS = Operating System
+
+Location of something
+    2 components
+        area
+        singluar item
+
+    Georgian College campus
+        city of Barrie  /   specific postal code
+        1 Georgian Drive
+
+    This java project
+        on C/Users/Username/IdeaProjects
+        comp1008Summer2026
+
+    Path = location / area
+    File = singular object (file or folder)
