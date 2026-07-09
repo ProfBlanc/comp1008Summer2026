@@ -1,7 +1,6 @@
 package wk9;
 
-import java.io.File;
-import java.io.IOException;
+import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.StandardOpenOption;
@@ -14,9 +13,9 @@ public class Week9 {
     public static void main(String[] args) {
         //example5();
         try{
-            example7();
+            example11();
         }
-        catch (Exception e){
+        catch (IOException e){
             IO.println("Error! " + e.getMessage());
         }
     }
@@ -151,8 +150,77 @@ public class Week9 {
             }
         }
     }
-    static void example8(){}
-    static void example9(){}
-    static void example10(){}
+    static void example8() throws IOException{
+
+        PrintWriter pw = new PrintWriter("src/wk9/test3.txt");
+        pw.println("First Line");
+        pw.println("Second Line");
+        pw.println("Third Line");
+        pw.println(4);  //String.valueOf(4);
+        pw.close();
+
+        Scanner file = new Scanner(new File("src/wk9/test3.txt"));
+        //execute operations
+        while(true){
+            if(file.hasNextInt()){
+                IO.println("INT found: " + file.nextInt());
+            }
+            else if(file.hasNextLine()){
+                IO.println("skipping");
+                file.nextLine();
+            }
+            else{
+                break;
+            }
+        }
+
+        file.close();
+    }
+    static void example9() throws IOException{
+
+        BufferedWriter bw = new BufferedWriter(
+                new FileWriter("src/wk9/test4.txt")
+        );
+        //bw.write("First Line");
+        bw.append("First Line");
+
+        bw.newLine();
+        //bw.write("Second Line");
+        bw.append("Second Line");
+        bw.newLine();
+        bw.close();
+
+    }
+    static void example10() throws IOException{
+        BufferedReader br = new BufferedReader(
+                new FileReader("src/wk9/test4.txt")
+        );
+        String line;
+        while((line = br.readLine()) != null){
+            IO.println(line);
+        }
+    }
+    static void example11() throws IOException{
+        //CSV file => text files with special formatting
+        String header = "ID,Name,Age";
+        ArrayList<String> data = new ArrayList<>();
+        data.add("12345,John,20");
+        data.add("12345,Jen,21");
+        data.add("12345,Mary,22");
+        data.add("12345,Bob,23");
+        data.add("12345,Frank,24");
+
+        Path path = Path.of("src", "wk9", "contacts.csv");
+        if(!Files.exists(path)){
+            Files.createFile(path);
+        }
+        Files.writeString(path, header + "\n", StandardOpenOption.APPEND);
+        Files.write(path, data, StandardOpenOption.APPEND);
+
+    }
+    static void example12(){}
+    static void example13(){}
+    static void example14(){}
+    static void example15(){}
 
 }

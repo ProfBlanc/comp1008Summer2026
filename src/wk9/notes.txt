@@ -32,3 +32,8 @@ Location of something
 
     Path = location / area
     File = singular object (file or folder)
+
+Path
+Files
+Scanner
+PrintWriter
