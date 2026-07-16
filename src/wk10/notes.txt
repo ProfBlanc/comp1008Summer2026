@@ -1,0 +1,57 @@
+Week 10 - July 16, 2026
+
+Two-Oh's
+    Different context, different behaviour
+
+
+Overriding vs Overloading
+Overriding: transform to something else
+            old version/method is replaced by the new implementation
+
+Overloading: adding a new variation to the method
+
+Object Class: class that is inherited by every other user-created class
+
+
+Inheritance
+    Creating a class BASED on another class
+       NOT start from stratch
+            keep previous version =>    add new functionality
+
+    Inheritance allows you to create a class
+    based on another class
+    -all instance variables & methods are inherited (kept)
+        - as long as access level is NOT private
+
+    Java can only inherit ONE other class
+    Animal      Cat     Lion
+                        Tiger
+
+    Liger is not possible in Java
+        Liger is half-Tiger, half-Lion
+
+
+Public vs Protected vs Private
+    Public: always accessible
+    Protected: accessible inside same package
+    Private: accessible only inside class
+
+
+Superclass and Subclass
+
+General         =>          Specific
+
+Old             =>          New
+
+Superclass      =>          Subclass
+
+Super           =>          Sub
+Parent                      Child
+Base                        Derived
+
+super Keyword
+
+
+Custom Exception
+
+Throwing Custom Exceptions
