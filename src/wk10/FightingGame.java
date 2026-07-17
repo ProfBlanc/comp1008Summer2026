@@ -51,7 +51,7 @@ public class FightingGame {
         Fighter pastFighter = fighters[0];
         Fighter pastBoss = fighters[1];
         fighters[0] = generateFighter(pastFighter.getName());
-        fighters[1] = generateFighter(pastBoss.getName());
+        fighters[1] = generateBoss(pastBoss.getName());
     }
     public Fighter fight(){
         int attacker = -1;
