@@ -56,4 +56,11 @@ public class Fighter {
     public String toString(){
         return name + " has a health of " + health + " and has the strength of " + strength;
     }
+
+    public boolean equals(Object other){
+        if(!(other instanceof Fighter))
+            return false;
+        Fighter fighter = (Fighter)other;
+        return this.name.equals(fighter.name) && this.health == fighter.health && this.strength == fighter.strength;
+    }
 }
