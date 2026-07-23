@@ -1,0 +1,62 @@
+You can re-use components created in Java
+
+You can create components in Java
+with the goal for it to be used as a
+component within a bigger product
+
+These components are non-functional
+by themselves
+    Cannot be instantiated (object can't be created)
+
+
+GCF
+    Greatest Common Factor
+LCF
+    Least Common Factor
+
+Group Common Factors using a component
+    Abstract Class
+        group common entities
+            instance vars
+            methods
+            constants
+            constructors
+            anything a concrete class has
+
+        CANNOT be instantiated
+        Dedicated Superclass
+
+what is a Shape?
+
+An abstract class can have an abstract method
+
+Abstract method
+    a method with NO DEFAULT IMPLEMENTATION (no method body)
+
+
+All Shapes have following methods
+    area
+    perimeter
+        Question: what is the default, one-size-fits-all
+        formula to calculate the area/perimeter for ANY shape
+
+
+Do all Abstract classes need an abstract method?
+    No
+
+
+An abstract class has same components of a concrete class
+but has special ability to have abstract method
+
+
+_______________________________________________
+
+There exists a concept named Interface
+An interface is an entity that outlines
+a list of requirements
+    outline methods: have no default implementation
+    has constant values
+    all things in interface are public
+
+When do I use this
+    to declare "this is what I need"

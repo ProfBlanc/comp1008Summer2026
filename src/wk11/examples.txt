@@ -1,0 +1,78 @@
+Moveable - I
+GasPowered - I
+DieselPowered - I
+Vehicle - A
+LandVehicle - A
+Truck - C
+Skidoo - C: motercycle on a body of water
+
+
+Categorize these items as
+    Concrete Class
+    Abstract Class: incomplete class with possible abstract method
+    Interface: a list of behaviours/requirements
+
+Ask: 1) Does this thing exists and is functional by itself
+        Yes: Concrete
+        No:Not concrete
+
+    2) Can this thing fit construct of: list of requirements
+        Yes: Interface
+        No:  Abstract
+
+
+_________________________________________________________________
+
+OnSalary        I
+Evaluation      I
+Employee        AC
+Student         C
+JavaProfessor   C
+
+_________________________________________________________________
+
+Animal          A
+Dolphin         C
+Hippo           C
+Lion            C
+MarineAnimal    A
+Swimmable       I
+Huntable        I
+Runnable        I
+
+_________________________________________________________________
+
+Shipping            I
+Product             A
+MobileDevice        A
+Tablette            C
+Discount            I
+Phone               C
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
